@@ -1,0 +1,57 @@
+.reviews {
+  background-color: $background-color--secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 9.6rem 11.2rem;
+  h2 {
+    @extend .section-heading;
+  }
+}
+
+.reviews__heading {
+  position: relative;
+}
+.reviews__ornament-1,
+.reviews__ornament-2 {
+  position: absolute;
+}
+.reviews__ornament-1 {
+  top: 0;
+  left: -5.6rem;
+}
+.reviews__ornament-2 {
+  bottom: 0.4rem;
+  right: -2.8rem;
+}
+
+.reviews__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  @include for-tablet-landscape-up {
+    grid-template-columns: 1fr 1fr;
+  }
+  column-gap: 8rem;
+}
+
+.reviews__review {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: $m-size;
+  p {
+    font-size: 2.8rem;
+    line-height: $leading-relaxed;
+  }
+  a {
+    color: #fff;
+    opacity: 0.8;
+  }
+  span {
+    position: absolute;
+    left: -1.6rem;
+    top: 0.8rem;
+    font-size: 6.4rem;
+    opacity: 0.3;
+  }
+}

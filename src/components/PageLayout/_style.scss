@@ -1,0 +1,9 @@
+main.page-layout {
+  padding: $l-size $m-size $xl-size;
+  min-height: calc(100vh - (#{$header-height} + #{$footer-height}));
+}
+
+main.page-layout--no-pad {
+  @extend .page-layout;
+  padding: 0;
+}

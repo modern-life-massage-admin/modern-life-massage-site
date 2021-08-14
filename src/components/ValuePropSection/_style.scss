@@ -1,0 +1,42 @@
+.value-prop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem $l-size 11.2rem;
+  text-align: center;
+  position: relative;
+  p,
+  h2 {
+    @include for-tablet-landscape-up {
+      width: 64%;
+    }
+    margin: 0;
+  }
+  h2 {
+    font-size: $xl-size;
+    line-height: $leading-normal;
+    margin-bottom: 4.2rem;
+  }
+  p {
+    line-height: 2.1;
+    font-size: 2rem;
+    text-align: left;
+    @include for-tablet-landscape-up {
+      text-align: center;
+    }
+  }
+}
+
+.value-prop__ornament-1,
+.value-prop__ornament-2 {
+  z-index: $z-bottom;
+  position: absolute;
+}
+.value-prop__ornament-1 {
+  top: 5.6rem;
+  left: 10%;
+}
+.value-prop__ornament-2 {
+  right: 10%;
+  bottom: 8rem;
+}

@@ -1,0 +1,71 @@
+.buttons {
+  display: flex;
+  button {
+    margin-right: $xs-size;
+  }
+}
+
+.button {
+  border: none;
+  height: 4rem;
+  padding: 0 $m-size;
+  background: $button-color;
+  color: $button-text-color;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  border-radius: $radius;
+  transition: $default-transition;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  &:hover {
+    box-shadow: $depth-1;
+  }
+  &:active {
+    box-shadow: none;
+  }
+  a {
+    text-decoration: none;
+    color: $button-text-color;
+  }
+}
+.button--primary {
+  @extend .button;
+  background: $button-color--primary;
+  color: $button-text-color--primary;
+}
+.button--outline {
+  @extend .button;
+  background: none;
+  border: 1px solid $button-color--primary;
+  color: $button-color--primary;
+}
+.button--no-style {
+  @extend .button;
+  background: none;
+  border: none;
+  padding: 0 $xs-size;
+  color: $text-color;
+  &:hover {
+    box-shadow: none;
+    opacity: 0.84;
+  }
+}
+.button--large {
+  @extend .button;
+  padding: $l-size;
+  line-height: $leading-loose;
+}
+
+.button--primary--large {
+  @extend .button--primary;
+  @extend .button--large;
+}
+.button--outline--large {
+  @extend .button--outline;
+  @extend .button--large;
+}
+.button--no-style--large {
+  @extend .button--no-style;
+  @extend .button--large;
+}

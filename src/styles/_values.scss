@@ -1,0 +1,52 @@
+// https://colorhunt.co/palette/258165
+
+// COLOR VALUES
+$dark-gray: #1c1427;
+$gray-blue: #9fb8ad;
+$light-blue: #c5d7bd;
+$orange: #fb743e;
+
+$dark-blue: #1c1427;
+$dark-blue--o80: #1c1427cc;
+$medium-blue: #22182f;
+$bright-green: #14e259;
+$light-green: #b5ff7d;
+$teal: #00ad7c;
+$black: #121212;
+
+//COLOR ROLES
+$main-accent-color: $bright-green;
+$secondary-accent-color: #{$light-green};
+$danger-color: red;
+
+// COLOR APPLICATION
+$background-color: $dark-blue;
+$background-color--secondary: #07805d;
+$header-color: #fff;
+$header-color--secondary: $dark-blue;
+$button-color: $teal;
+$button-color--primary: $main-accent-color;
+$button-text-color: #fff;
+$button-text-color--primary: #fff;
+$footer-background-color: $black;
+//   $border-color: #{$dark-gray-blue$72};
+$text-color: #fff;
+$card-background-color: $medium-blue;
+
+// SIZES
+$xs-size: 1rem;
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+
+$radius: 4px;
+
+// FONTS
+$display-font: "Source Sans Pro", sans-serif;
+$body-font: "Source Sans Pro", sans-serif;
+
+// COMPONENT HEIGHT
+$header-height: 7.2rem;
+$footer-height: 35.6rem;
+// $footer-height: 32.4rem;

@@ -1,0 +1,51 @@
+.hours-section {
+  background-color: $background-color--secondary;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0 11.2rem;
+}
+
+.hours-section__content {
+  display: grid;
+  grid-template-columns: 41.6rem;
+  column-gap: 5.6rem;
+  @include for-desktop-up {
+    column-gap: 11.2rem;
+  }
+  @include for-tablet-landscape-up {
+    grid-template-columns: 41.6rem 41.6rem;
+  }
+  h3 {
+    font-size: $xl-size;
+    font-weight: 600;
+    margin: 0 0 $xs-size;
+  }
+}
+
+.hours-section__hours {
+  margin-bottom: $l-size;
+  span {
+    font-weight: 200;
+  }
+  ul {
+    padding-inline-start: 0;
+    li {
+      &:nth-child(odd) {
+        background-color: #00000033;
+      }
+      display: flex;
+      justify-content: space-between;
+      padding: $s-size;
+      p {
+        margin: 0;
+        &:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.hours-section__address {
+  font-size: 2rem;
+  line-height: $leading-relaxed;
+}

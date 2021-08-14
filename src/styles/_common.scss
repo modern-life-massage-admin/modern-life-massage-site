@@ -1,0 +1,122 @@
+.eyebrow {
+  text-transform: uppercase;
+  color: $header-color--secondary;
+  letter-spacing: 0.08em;
+  font-size: 2.4rem;
+}
+
+.section-heading {
+  font-size: 6.4rem;
+  margin: 0 0 $xl-size;
+  font-weight: 600;
+}
+
+.card-background {
+  background-color: $card-background-color;
+  border-radius: 8px;
+  box-shadow: $depth-5;
+}
+
+// FORM STYLES
+// --------------------------
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  @include for-tablet-landscape-up {
+    width: 65.6rem;
+  }
+}
+
+.form__header {
+  display: flex;
+  h2 {
+    margin-right: $s-size;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+// Shared Input Styles
+.text-input,
+.number-input,
+.select-input,
+.textarea-input {
+  background: #00000033;
+  border: 1px solid #a1a1a1;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  color: $text-color;
+  font-size: 1.6rem;
+  padding: $s-size 1.2rem;
+  line-height: 2rem;
+  margin: 0.4rem 0 $m-size;
+}
+.text-input,
+.number-input,
+.select-input {
+  height: 5.6rem;
+}
+
+.select-input {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.304 125.304"><path d="M62.652 103.895L0 21.41h125.304" fill="%23666666"/></svg>');
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 70%, 0 0;
+  background-size: 0.65em auto, 100%;
+  background-color: $background-color--secondary;
+}
+
+.text-input:focus,
+.number-input:focus,
+.select-input:focus,
+.textarea-input:focus {
+  border: 2px solid $main-accent-color;
+  outline: none;
+}
+
+textarea {
+  height: 11.2rem;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.2rem 0.4rem 0.8rem;
+}
+
+input:focus + .label,
+select:focus + .label {
+  color: $main-accent-color;
+}
+
+.input__helper-text,
+.input__error {
+  margin-bottom: $m-size;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  min-height: 1.6rem;
+}
+
+.input__helper-text {
+  opacity: 0.54;
+  font-weight: 400;
+}
+
+.input__error {
+  color: $danger-color;
+}
+
+.input--error {
+  border-bottom: 2px solid $danger-color;
+}
+
+input:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

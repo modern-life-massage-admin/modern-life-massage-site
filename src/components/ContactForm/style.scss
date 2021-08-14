@@ -1,0 +1,8 @@
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 9.6rem $xl-size 11.2rem;
+  h2 {
+    @extend .section-heading;
+  }
+}

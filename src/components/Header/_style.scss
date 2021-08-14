@@ -1,0 +1,104 @@
+header.header {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $m-size;
+  background-color: $background-color;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 6px 3px rgba(0, 0, 0, 0.23);
+  overflow: visible;
+  position: relative;
+  z-index: $z-top;
+  color: #fff;
+  nav {
+    margin-right: $l-size;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      @include for-tablet-portrait-up {
+        flex-direction: row;
+      }
+      li {
+        margin: 0 0 $m-size 0;
+        font-size: $l-size;
+        @include for-tablet-portrait-up {
+          margin: 0 0 0 $m-size;
+          font-size: $m-size;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.header__logo {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: $m-size;
+  }
+}
+.header__wordmark {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: initial;
+  }
+}
+.header__menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include for-tablet-portrait-up {
+    flex-direction: row;
+  }
+}
+.header__right {
+  align-items: center;
+  span {
+    margin-left: $m-size;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $dark-blue--o80;
+  backdrop-filter: blur(6px);
+  width: 100vw;
+  height: 100vh;
+  z-index: $z-1;
+  @include for-tablet-portrait-up {
+    position: relative;
+    background-color: none;
+    flex-direction: row;
+    width: initial;
+    height: initial;
+    backdrop-filter: none;
+  }
+}
+.header__right--hidden {
+  @extend .header__right;
+  display: none;
+  pointer-events: none;
+  @include for-tablet-portrait-up {
+    display: flex;
+    pointer-events: initial;
+  }
+}
+.header__menu-button {
+  position: relative;
+  display: initial;
+  z-index: $z-top;
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+}
