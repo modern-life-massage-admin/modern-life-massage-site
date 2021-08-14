@@ -20,6 +20,11 @@ header.header {
       @include for-tablet-portrait-up {
         flex-direction: row;
       }
+      &:hover {
+        a {
+          opacity: 0.8;
+        }
+      }
       li {
         margin: 0 0 $m-size 0;
         font-size: $l-size;
@@ -28,8 +33,12 @@ header.header {
           font-size: $m-size;
         }
         a {
+          transition: $default-transition;
           color: #fff;
           text-decoration: none;
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }

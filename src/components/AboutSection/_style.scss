@@ -36,6 +36,10 @@
   a {
     color: #fff;
     font-size: 1.8rem;
+    transition: $default-transition;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .about-section__hero {
