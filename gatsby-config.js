@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Modern Life Massage",
+    siteUrl: `https://jovial-aryabhata-f7c70f.netlify.app/`,
   },
   plugins: [
     "gatsby-plugin-sass",
