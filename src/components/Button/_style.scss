@@ -20,6 +20,7 @@
   align-items: center;
   &:hover {
     box-shadow: $depth-1;
+    background: darken($button-color, 6%);
   }
   &:active {
     box-shadow: none;
@@ -33,6 +34,10 @@
   @extend .button;
   background: $button-color--primary;
   color: $button-text-color--primary;
+  &:hover {
+    box-shadow: $depth-2;
+    background: darken($button-color--primary, 4%);
+  }
 }
 .button--outline {
   @extend .button;
@@ -49,6 +54,7 @@
   &:hover {
     box-shadow: none;
     opacity: 0.84;
+    background: none;
   }
 }
 .button--large {

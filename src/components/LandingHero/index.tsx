@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Button from "../Button";
@@ -27,7 +27,9 @@ const LandingHero = () => (
           <div className="landing-hero__content">
             <h1>Massage that is</h1>
             <h1>Simply Better</h1>
-            <Button onClick={() => {}}>See Our Services</Button>
+            <Link to="/services">
+              <Button onClick={() => {}}>See Our Services</Button>
+            </Link>
             <svg
               width="300"
               height="300"
