@@ -28,13 +28,16 @@
       "text": "Came in for a 60 min. deep tissue massage with Jeff. Massage was excellent! Great pressure, great technique, and the hot stones/hot towels made it so better than the average massage. I wish I could come every week. The facility is really clean, neat and spacious. Will be a repeat customer!",
       "name": "Kendall Parmley",
       "source": "Google Reviews",
-      "link": "https://www.google.com/search?q=modern+life+massage+therapy&oq=modern+life+massage+therapy&aqs=chrome..69i57j69i61l3.6616j0j7&sourceid=chrome&ie=UTF-8#lrd=0x8842437e15021917:0x27395a8cd4ab2700,1,,,"
+      "link": "https://www.google.com/search?q=modern+life+massage+therapy&oq=modern+life+massage+therapy&aqs=chrome..69i57j69i61l3.6616j0j7&sourceid=chrome&ie=UTF-8#lrd=0x8842437e15021917:0x27395a8cd4ab2700,1,,,",
+      "author": "Kendall Parmley"
     },
     {
       "text": "I had a fully relaxing massage, complete with my own selection of music. I enjoyed the soft natural light filling the room.",
       "link": "https://www.google.com/search?q=modern+life+massage+therapy&oq=modern+life+massage+therapy&aqs=chrome..69i57j69i61l3.6616j0j7&sourceid=chrome&ie=UTF-8#lrd=0x8842437e15021917:0x27395a8cd4ab2700,1,,,",
       "source": "Google Reviews",
-      "name": "Gary Pattison"
+      "name": "Gary Pattison",
+      "author": "Gary Pattison"
     }
-  ]
+  ],
+  "hero_image": "/img/heroimage.png"
 }
