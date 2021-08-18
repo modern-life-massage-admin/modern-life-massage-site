@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import HomePageData from "../../../content/homepage.json";
+
 const Reviews = () => (
   <section className="reviews">
     <div className="reviews__heading">
@@ -44,42 +46,30 @@ const Reviews = () => (
     </div>
     <div className="reviews__main">
       <div>
-        <div className="reviews__review">
-          <span>&ldquo;</span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            mattis, leo vitae varius lobortis, mauris mauris varius dui, vitae
-            iaculis est quam aliquet mi.{" "}
-          </p>
-          <h4>Julie Wilson</h4>
-          <a href="#">Google Reviews</a>
-        </div>
-        <div className="reviews__review">
-          <span>&ldquo;</span>
-          <p>
-            Integer sodales odio vitae nisi lobortis, eu ullamcorper ante
-            mattis. Sed vulputate, elit quis molestie porta, nulla odio pharetra
-            felis, eu pellentesque arcu erat sit amet eros. Maecenas finibus
-            bibendum eleifend. Nulla in tortor quis ipsum egestas scelerisque.
-            In suscipit sodales arcu non tristique.
-          </p>
-          <h4>Todd Simons</h4>
-          <a href="#">Yelp</a>
-        </div>
+        {HomePageData.reviews.map(({ text, author, source, link }, index) => {
+          if (index % 2 == 0) return;
+          return (
+            <div className="reviews__review">
+              <span>&ldquo;</span>
+              <p>{text}</p>
+              <h4>{author}</h4>
+              <a href={link}>{source}</a>
+            </div>
+          );
+        })}
       </div>
       <div>
-        <div className="reviews__review">
-          <span>&ldquo;</span>
-          <p>
-            Integer sodales odio vitae nisi lobortis, eu ullamcorper ante
-            mattis. Sed vulputate, elit quis molestie porta, nulla odio pharetra
-            felis, eu pellentesque arcu erat sit amet eros. Maecenas finibus
-            bibendum eleifend. Nulla in tortor quis ipsum egestas scelerisque.
-            In suscipit sodales arcu non tristique.
-          </p>
-          <h4>Todd Simons</h4>
-          <a href="#">Yelp</a>
-        </div>
+        {HomePageData.reviews.map(({ text, author, source, link }, index) => {
+          if (index % 2 == 1) return;
+          return (
+            <div className="reviews__review">
+              <span>&ldquo;</span>
+              <p>{text}</p>
+              <h4>{author}</h4>
+              <a href={link}>{source}</a>
+            </div>
+          );
+        })}
       </div>
     </div>
   </section>

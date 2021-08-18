@@ -1,14 +1,11 @@
 import * as React from "react";
 
+import HomePageData from "../../../content/homepage.json";
+
 const ValuePropSection = () => (
   <section className="value-prop">
-    <h2>Massage should decrease stress, not add to it.</h2>
-    <p>
-      Today's world inundates and overwhelms us with choices. At Modern Life
-      Massage Therapy, our therapists will work with you to develop a customized
-      treatment plan. One that meets your needs, as determined by you and the
-      expertise and experience of your therapist.
-    </p>
+    <h2>{HomePageData.value_prop_title}</h2>
+    <p>{HomePageData.value_prop_paragraph}</p>
     <div className="value-prop__ornament-1">
       <svg
         width="300"

@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
 
-media_folder: static/img
+media_folder: "images/uploads"
 public_folder: /img
 
 collections:
@@ -14,6 +14,7 @@ collections:
         extension: "json"
         description: "Home Page Content"
         fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
           - {
               label: "Value Prop Title",
               name: "value_prop_title",
@@ -39,6 +40,6 @@ collections:
             widget: "list"
             fields:
               - { label: "Review Text", name: "text", widget: "text" }
-              - { label: "Reviewer Name", name: "name", widget: "string" }
+              - { label: "Review Author", name: "author", widget: "string" }
               - { label: "Review Link URL", name: "link", widget: "string" }
               - { label: "Review Source", name: "source", widget: "string" }
