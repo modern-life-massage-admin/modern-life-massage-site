@@ -5,18 +5,22 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "index"
-    media_folder: ""
-    public_folder: ""
-    path: "{{title}}/index"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "homepage"
+        file: "content/homepage.json"
+        extension: "json"
+        description: "Home Page Content"
+        fields:
+          - {
+              label: "Value Prop Title",
+              name: "value_prop_title",
+              widget:"string",
+            }
+          - {
+              label: "Value Prop Paragraph",
+              name: "value_prop_paragraph",
+              widget:"string",
+            }
