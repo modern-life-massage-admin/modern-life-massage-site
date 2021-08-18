@@ -32,13 +32,13 @@ collections:
               - {
                   label: "Add-on Description",
                   name: "description",
-                  widget: "string",
+                  widget: "text",
                 }
           - label: "Reviews"
             name: "reviews"
             widget: "list"
             fields:
-              - { label: "Review Text", name: "text", widget: "string" }
+              - { label: "Review Text", name: "text", widget: "text" }
               - { label: "Reviewer Name", name: "name", widget: "string" }
               - { label: "Review Link URL", name: "link", widget: "string" }
               - { label: "Review Source", name: "source", widget: "string" }
