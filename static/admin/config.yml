@@ -17,10 +17,28 @@ collections:
           - {
               label: "Value Prop Title",
               name: "value_prop_title",
-              widget:"string",
+              widget: "string",
             }
           - {
               label: "Value Prop Paragraph",
               name: "value_prop_paragraph",
-              widget:"string",
+              widget: "text",
             }
+          - label: "Enhancements & Add-ons"
+            name: "add_ons"
+            widget: "list"
+            fields:
+              - { label: "Add-on Title", name: "title", widget: "string" }
+              - {
+                  label: "Add-on Description",
+                  name: "description",
+                  widget: "string",
+                }
+          - label: "Reviews"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - { label: "Review Text", name: "text", widget: "string" }
+              - { label: "Reviewer Name", name: "name", widget: "string" }
+              - { label: "Review Link URL", name: "link", widget: "string" }
+              - { label: "Review Source", name: "source", widget: "string" }
