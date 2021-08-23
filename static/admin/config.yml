@@ -80,7 +80,6 @@ collections:
               name: "licenseAddress",
               widget: "string",
             }
-          - { label: "Address", name: "address", widget: "text" }
           - label: "Team Members"
             name: "team"
             widget: "list"
@@ -98,12 +97,14 @@ collections:
   - label: "General Content"
     name: "globalContent"
     files:
-      - label: "Social Links"
-        name: "socialLinks"
-        file: "content/sociallinks.json"
+      - label: "Footer Content"
+        name: "footerContent"
+        file: "content/footercontent.json"
         extension: "json"
-        description: "Social media links for the site footer"
+        description: "Site footer conent"
         fields:
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Phone Number", name: "phoneNumber", widget: "string" }
           - {
               label: "Facebook Link",
               name: "facebookAddress",
