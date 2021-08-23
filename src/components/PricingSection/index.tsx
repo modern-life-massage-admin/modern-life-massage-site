@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import ServicesPageData from "../../../content/servicespage.json";
+
 const prices = [
   {
     time: "15 Minutes",
@@ -30,22 +32,17 @@ const PricingSection = () => (
   <section className="pricing-section">
     <span className="eyebrow">General Pricing</span>
     <div className="pricing-section__pricing-table">
-      {prices.map((price) => (
+      {ServicesPageData.prices.map(({ label, price }) => (
         <div className="pricing-section__price">
-          <span>{price.time}</span>
+          <span>{label}</span>
           <div>
-            <h3>{price.price}</h3>
+            <h3>{`$${price}`}</h3>
           </div>
         </div>
       ))}
     </div>
     <div className="pricing-section__footnotes">
-      <p>* Monthly package includes four 60 minute massages per month</p>
-      <p>We will travel to your location for an additional $40</p>
-      <p>
-        15 minute sessions are only offered for Chair Massages, unless prior
-        arrangements are made
-      </p>
+      {/* {ServicesPageData.pricing-notes.map} */}
     </div>
   </section>
 );
