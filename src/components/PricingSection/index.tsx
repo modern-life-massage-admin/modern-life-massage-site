@@ -42,7 +42,9 @@ const PricingSection = () => (
       ))}
     </div>
     <div className="pricing-section__footnotes">
-      {/* {ServicesPageData.pricing-notes.map} */}
+      {ServicesPageData.pricingNotes.map((note) => (
+        <p>{note.description}</p>
+      ))}
     </div>
   </section>
 );

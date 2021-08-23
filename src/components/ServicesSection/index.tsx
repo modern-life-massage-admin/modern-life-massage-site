@@ -62,7 +62,7 @@ const ServicesSection = () => {
         {services.map(({ title, description, image }) => (
           <div className="services-section__card">
             <div className="services-section__card-content">
-              {/* <img src={image} alt="service cover image" /> */}
+              <img src={image} alt="service cover image" />
               <h4>{title}</h4>
               <p>{description}</p>
             </div>

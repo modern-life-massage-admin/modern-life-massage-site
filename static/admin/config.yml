@@ -74,7 +74,12 @@ collections:
         extension: "json"
         description: "About Page Content"
         fields:
-          - { label: "About Us Copy", name: "aboutCopy", widget: "text" }
+          - {
+              label: "About Us Copy",
+              name: "aboutCopy",
+              widget: "text",
+              hint: "Make sure to include a (<br/>) between line breaks",
+            }
           - {
               label: "URL to License",
               name: "licenseAddress",
@@ -103,7 +108,9 @@ collections:
         extension: "json"
         description: "Site footer conent"
         fields:
-          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Address Line 1", name: "address1", widget: "string" }
+          - { label: "Address Line 2", name: "address2", widget: "string" }
+          - { label: "Address Line 3", name: "address3", widget: "string" }
           - { label: "Phone Number", name: "phoneNumber", widget: "string" }
           - {
               label: "Facebook Link",
