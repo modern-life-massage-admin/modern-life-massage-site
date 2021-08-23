@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 media_folder: "static/images"
-public_folder: "/public/images"
+public_folder: "/images"
 
 collections:
   - label: "Pages"
