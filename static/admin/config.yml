@@ -43,3 +43,25 @@ collections:
               - { label: "Review Author", name: "author", widget: "string" }
               - { label: "Review Link URL", name: "link", widget: "string" }
               - { label: "Review Source", name: "source", widget: "string" }
+
+      - label: "Services Page"
+        name: "services-page"
+        file: "content/servicespage.json"
+        extension: "json"
+        description: "Serives Page Content"
+        fields:
+          - label: "Pricing Options"
+            name: "prices"
+            widget: "list"
+            - { label: "Label", name: "label", widget: "string"}
+            - { label: "Price", name: "price", widget: "string"}
+          - label: "Pricing Notes"
+            name: "pricing-notes"
+            widget: "list"
+            - { label: "Description", name: "description", widget: "text"}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            - { label: "Image", name: "image", widget: "image"}
+            - { label: "Title", name: "title", widget: "string"}
+            - { label: "Description", name: "description", widget: "text"}

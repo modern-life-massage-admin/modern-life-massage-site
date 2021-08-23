@@ -8,7 +8,7 @@ const LandingHero = () => (
   <StaticQuery
     query={graphql`
       query {
-        heroImage: file(relativePath: { regex: "/heroImage/" }) {
+        heroImage: file(relativePath: { regex: "/heroimage/" }) {
           childImageSharp {
             gatsbyImageData(
               layout: CONSTRAINED
