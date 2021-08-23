@@ -116,23 +116,23 @@ collections:
               label: "Facebook Link",
               name: "facebookAddress",
               widget: "string",
-              required: "false",
+              required: false,
             }
           - {
               label: "Instagram Link",
               name: "instagramAddress",
               widget: "string",
-              required: "false",
+              required: false,
             }
           - {
               label: "Twitter Link",
               name: "twitterAddress",
               widget: "string",
-              required: "false",
+              required: false,
             }
           - {
               label: "YouTube Link",
               name: "youtubeAddress",
               widget: "string",
-              required: "false",
+              required: false,
             }
