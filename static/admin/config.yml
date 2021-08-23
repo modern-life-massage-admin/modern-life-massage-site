@@ -81,7 +81,7 @@ collections:
               widget: "string",
             }
           - { label: "Address", name: "address", widget: "text" }
-          - label: "Team"
+          - label: "Team Members"
             name: "team"
             widget: "list"
             fields:
