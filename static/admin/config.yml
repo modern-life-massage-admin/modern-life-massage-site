@@ -95,3 +95,24 @@ collections:
             fields:
               - { label: "Day", name: "day", widget: "string" }
               - { label: "Hours", name: "hours", widget: "string" }
+  - label: "General Content"
+    name: "globalContent"
+    files:
+      - label: "Social Links"
+        name: "socialLinks"
+        file: "content/sociallinks.json"
+        extension: "json"
+        description: "Social media links for the site footer"
+        fields:
+          - {
+              label: "Facebook Link",
+              name: "facebookAddress",
+              widget: "string",
+            }
+          - {
+              label: "Instagram Link",
+              name: "instagramAddress",
+              widget: "string",
+            }
+          - { label: "Twitter Link", name: "twitterAddress", widget: "string" }
+          - { label: "YouTube Link", name: "youtubeAddress", widget: "string" }
