@@ -28,9 +28,9 @@ const TeamSection = () => {
     <section className="team-section">
       <h2>Our Team</h2>
       <div className="team-section__cards">
-        {team.map(({ name, title, description }) => (
+        {team.map(({ name, title, description, image }) => (
           <div className="team-section__card">
-            {/* <img src={} alt="" /> */}
+            <img src={image} alt="Team member portrait" />
             <h4>{name}</h4>
             <h5>{title}</h5>
             <p>{description}</p>

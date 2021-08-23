@@ -27,6 +27,14 @@
 .services-section__card {
   @extend .card-background;
   overflow: hidden;
+  max-width: 64rem;
+  img {
+    object-fit: cover;
+    max-height: 20.8rem;
+    max-height: 36.8rem;
+    @include for-tablet-landscape-up {
+    }
+  }
 }
 .services-section__card-content {
   padding: 2.8rem $l-size;

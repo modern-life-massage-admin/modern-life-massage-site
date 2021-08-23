@@ -50,5 +50,6 @@
   }
   img {
     border-radius: 704px;
+    max-width: calc(33vw - (#{$xl-size} * 2));
   }
 }

@@ -117,22 +117,26 @@ collections:
               name: "facebookAddress",
               widget: "string",
               required: false,
+              hint: "The icon will not appear, if the field is left blank",
             }
           - {
               label: "Instagram Link",
               name: "instagramAddress",
               widget: "string",
               required: false,
+              hint: "The icon will not appear, if the field is left blank",
             }
           - {
               label: "Twitter Link",
               name: "twitterAddress",
               widget: "string",
               required: false,
+              hint: "The icon will not appear, if the field is left blank",
             }
           - {
               label: "YouTube Link",
               name: "youtubeAddress",
               widget: "string",
               required: false,
+              hint: "The icon will not appear, if the field is left blank",
             }
