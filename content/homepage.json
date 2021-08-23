@@ -39,5 +39,5 @@
       "author": "Gary Pattison"
     }
   ],
-  "hero_image": "/img/heroimage.png"
+  "hero_image": "/public/images/heroimage.png"
 }
