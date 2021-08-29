@@ -3,9 +3,11 @@ import { Link } from "gatsby";
 
 import PageLayout from "../components/PageLayout";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
 
 const NotFoundPage = () => (
   <PageLayout layout="no-pad">
+    <SEO title="404" description="Page Not Found" slug="/404" />
     <div
       style={{
         display: "flex",
