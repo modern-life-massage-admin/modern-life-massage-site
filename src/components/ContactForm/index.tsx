@@ -1,6 +1,4 @@
 import * as React from "react";
-import { Formik, Form } from "formik";
-import * as Yup from "yup";
 
 import Button from "../Button";
 
@@ -9,7 +7,12 @@ const ContactForm = () => (
     <div className="contact-form">
       <h2>Contact Us</h2>
       <div className="form__wrapper">
-        <form action="">
+        <form
+          name="Contact Form"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you"
+        >
           <input type="hidden" name="form-name" value="Contact Form" />
           <div className="input-group">
             <input className="text-input" type="text" name="name" required />
