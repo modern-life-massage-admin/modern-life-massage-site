@@ -18,7 +18,10 @@
   h3 {
     font-size: $xl-size;
     font-weight: 600;
-    margin: 0 0 $xs-size;
+    margin: 0 0 $xs-size $l-size;
+    @include for-tablet-portrait-up {
+      margin: 0 0 $xs-size;
+    }
   }
 }
 
@@ -26,6 +29,10 @@
   margin-bottom: $l-size;
   span {
     font-weight: 200;
+    margin: 0 0 0 $l-size;
+    @include for-tablet-portrait-up {
+      margin: 0;
+    }
   }
   ul {
     padding-inline-start: 0;
@@ -48,4 +55,10 @@
 .hours-section__address {
   font-size: 2rem;
   line-height: $leading-relaxed;
+  p {
+    margin-left: $l-size;
+    @include for-tablet-portrait-up {
+      margin-left: 0;
+    }
+  }
 }
