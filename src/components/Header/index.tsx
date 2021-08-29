@@ -42,9 +42,11 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <Button onClick={() => {}} variant="primary">
-            Book Now
-          </Button>
+          <Link to="/book-now">
+            <Button onClick={() => {}} variant="primary">
+              Book Now
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="header__menu-button">
