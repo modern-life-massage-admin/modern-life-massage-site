@@ -6,7 +6,10 @@
     align-items: flex-start;
   }
   background-color: $background-color--secondary;
-  padding: 9.6rem $xl-size 11.2rem;
+  padding: 9.6rem $l-size 11.2rem;
+  @include for-tablet-portrait-up {
+    padding: 9.6rem $xl-size 11.2rem;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -26,12 +29,19 @@
 }
 
 .add-ons__main {
-  margin: 0 14vw $xl-size 0;
+  margin: 0 0 $xl-size 0;
   @include for-tablet-landscape-up {
     max-width: 33vw;
     margin: 0 14.4rem 0 0;
   }
   p {
     line-height: $leading-loose;
+    width: 88%;
+    @include for-tablet-portrait-up {
+      width: 78%;
+    }
+    @include for-tablet-landscape-up {
+      width: 100%;
+    }
   }
 }

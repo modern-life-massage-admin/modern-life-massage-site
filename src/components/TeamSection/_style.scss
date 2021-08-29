@@ -50,6 +50,12 @@
   }
   img {
     border-radius: 704px;
-    max-width: calc(33vw - (#{$xl-size} * 2));
+    max-width: calc(100vw - (#{$xl-size} * 2));
+    @include for-tablet-landscape-up {
+      max-width: calc(50vw - (#{$xl-size} * 2));
+    }
+    @include for-desktop-up {
+      max-width: calc(33vw - (#{$xl-size} * 2));
+    }
   }
 }
