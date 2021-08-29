@@ -3,6 +3,7 @@ backend:
 
 media_folder: "static/images"
 public_folder: "/images"
+logo_url: https://api.netlify.com/api/v1/badges/1de23153-eef5-4a63-a79a-5ca4b2f16d6a/deploy-status
 
 collections:
   - label: "Pages"
