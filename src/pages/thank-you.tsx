@@ -3,9 +3,15 @@ import { Link } from "gatsby";
 
 import PageLayout from "../components/PageLayout";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
 
 const NotFoundPage = () => (
   <PageLayout layout="no-pad">
+    <SEO
+      title="Thank You"
+      description="Your message has been sent to Modern Life Massage Therapy."
+      slug="/thank-you"
+    />
     <div
       style={{
         display: "flex",

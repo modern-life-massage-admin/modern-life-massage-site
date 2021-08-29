@@ -1,9 +1,15 @@
 import * as React from "react";
 
 import PageLayout from "../components/PageLayout";
+import SEO from "../components/SEO";
 
 const AboutPage = () => (
   <PageLayout layout="no-pad">
+    <SEO
+      title="Book Now"
+      description="Book your appointment for your next massage."
+      slug="/book-now"
+    />
     <iframe
       src="https://www.massagebook.com/biz/ModernLifeMassageTherapy#services"
       frameborder="0"
