@@ -3,7 +3,6 @@ backend:
 
 media_folder: "static/images"
 public_folder: "/images"
-# logo_url: https://api.netlify.com/api/v1/badges/1de23153-eef5-4a63-a79a-5ca4b2f16d6a/deploy-status
 
 collections:
   - label: "Pages"
@@ -141,3 +140,15 @@ collections:
               required: false,
               hint: "The icon will not appear, if the field is left blank",
             }
+      - label: "Book Now Page"
+        name: "booknowpage"
+        file: "content/booknowpage.json"
+        extension: "json"
+        description: "Book Now Page Content"
+        fields:
+          - label: "Promo Codes"
+            name: "promoCodes"
+            widget: "list"
+            fields:
+              - { label: "Promo Code", name: "code", widget: "string" }
+              - { label: "Promo URL", name: "url", widget: "string" }
