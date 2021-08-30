@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import PageLayout from "../components/PageLayout";
+import PromoCodeSection from "../components/PromoCodeSection";
 import SEO from "../components/SEO";
 
 const AboutPage = () => (
@@ -16,6 +17,7 @@ const AboutPage = () => (
       width="100%"
       height="1000"
     ></iframe>
+    <PromoCodeSection />
   </PageLayout>
 );
 
