@@ -99,6 +99,18 @@ collections:
             fields:
               - { label: "Day", name: "day", widget: "string" }
               - { label: "Hours", name: "hours", widget: "string" }
+      - label: "Book Now Page"
+        name: "booknowpage"
+        file: "content/booknowpage.json"
+        extension: "json"
+        description: "Book Now Page Content"
+        fields:
+          - label: "Promo Codes"
+            name: "promoCodes"
+            widget: "list"
+            fields:
+              - { label: "Promo Code", name: "code", widget: "string" }
+              - { label: "Promo URL", name: "url", widget: "string" }
   - label: "General Content"
     name: "globalContent"
     files:
@@ -140,15 +152,3 @@ collections:
               required: false,
               hint: "The icon will not appear, if the field is left blank",
             }
-      - label: "Book Now Page"
-        name: "booknowpage"
-        file: "content/booknowpage.json"
-        extension: "json"
-        description: "Book Now Page Content"
-        fields:
-          - label: "Promo Codes"
-            name: "promoCodes"
-            widget: "list"
-            fields:
-              - { label: "Promo Code", name: "code", widget: "string" }
-              - { label: "Promo URL", name: "url", widget: "string" }
