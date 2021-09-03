@@ -82,7 +82,7 @@ header.header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: $dark-blue--o88;
+  background-color: $dark-blue--o96;
   backdrop-filter: blur(6px);
   width: 100vw;
   height: 100vh;
@@ -94,6 +94,12 @@ header.header {
     width: initial;
     height: initial;
     backdrop-filter: none;
+  }
+  button {
+    background-color: darken($main-accent-color, 7%);
+    &:hover {
+      background-color: darken($main-accent-color, 10%);
+    }
   }
 }
 .header__right--hidden {
