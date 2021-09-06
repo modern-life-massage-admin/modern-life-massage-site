@@ -39,5 +39,8 @@
       "author": "Gary Pattison"
     }
   ],
-  "hero_image": "/public/images/heroimage.png"
+  "hero_image": "/public/images/heroimage.png",
+  "gift_cert_title": "Gift Certificates Available",
+  "gift_cert_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "gift_cert_link": "https://www.massagebook.com/LEXINGTON~Massage~ModernLifeMassageTherapy?src=external#gift-certificates"
 }
