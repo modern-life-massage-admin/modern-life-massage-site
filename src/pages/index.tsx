@@ -6,6 +6,7 @@ import AddOnSection from "../components/AddOnSection";
 import ValuePropSection from "../components/ValuePropSection";
 import Reviews from "../components/Reviews";
 import SEO from "../components/SEO";
+import GiftCertificateSection from "../components/GiftCertificateSection";
 
 const IndexPage = () => (
   <PageLayout layout="no-pad">
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <AddOnSection />
     <ValuePropSection />
     <Reviews />
+    <GiftCertificateSection />
   </PageLayout>
 );
 
