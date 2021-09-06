@@ -52,6 +52,7 @@ collections:
               label: "Gift Certificate Paragraph",
               name: "gift_cert_paragraph",
               widget: "text",
+              required: false,
             }
           - {
               label: "Gift Certificate Link",
