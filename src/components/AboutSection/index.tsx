@@ -21,7 +21,7 @@ const AboutPage = () => (
     `}
     render={(data) => {
       const heroImage = getImage(data.heroImage);
-      const { aboutCopy, licenseAddress } = AboutPageData;
+      const { aboutCopy, licenseLinkAddress, licenseLinkText } = AboutPageData;
       return (
         <section className="about-section">
           <div className="about-section__content">
@@ -29,7 +29,7 @@ const AboutPage = () => (
             <p>{aboutCopy}</p>
 
             <div className="about-section__link">
-              <a href={licenseAddress}>View Our License</a>
+              <a href={licenseLinkAddress}>{licenseLinkText}</a>
             </div>
           </div>
           <div className="about-section__hero">
