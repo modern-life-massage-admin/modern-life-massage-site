@@ -97,8 +97,13 @@ collections:
               hint: "Make sure to include a (<br/>) between line breaks",
             }
           - {
+              label: "License Link Text",
+              name: "licenseLinkText",
+              widget: "string",
+            }
+          - {
               label: "URL to License",
-              name: "licenseAddress",
+              name: "licenseLinkAddress",
               widget: "string",
             }
           - label: "Team Members"
