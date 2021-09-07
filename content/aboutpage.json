@@ -39,5 +39,7 @@
       "day": "Saturday",
       "hours": "10:00am - 5:00pm"
     }
-  ]
+  ],
+  "licenseLinkAddress": "http://oop.ky.gov/lic_search.aspx",
+  "licenseLinkText": "View Our Staff's Licenses"
 }
