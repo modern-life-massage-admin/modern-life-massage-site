@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Modern Life Massage",
     description: "Modern Life Massage Therapy, massage that is simply better.",
-    siteUrl: `https://jovial-aryabhata-f7c70f.netlify.app/`,
+    siteUrl: `https://www.modernlifemassagetherapy.com/`,
     keywords: `massage, therapy, appointment, lexington, kentucky`,
   },
   plugins: [
