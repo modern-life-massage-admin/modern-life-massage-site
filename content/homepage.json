@@ -4,23 +4,31 @@
   "add_ons": [
     {
       "title": "Hot Stones",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e."
+      "description": " "
     },
     {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.",
+      "description": " ",
       "title": "Sugar Scrub"
     },
     {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.",
+      "description": " ",
       "title": "Aromatherapy"
     },
     {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.",
+      "description": " ",
       "title": "Cupping"
     },
     {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e.",
+      "description": " ",
       "title": "Kinesiology Taping"
+    },
+    {
+      "title": "Hot Pack",
+      "description": " "
+    },
+    {
+      "title": "Hot Towel",
+      "description": " "
     }
   ],
   "reviews": [
