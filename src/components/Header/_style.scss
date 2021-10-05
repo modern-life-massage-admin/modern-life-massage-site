@@ -95,12 +95,6 @@ header.header {
     height: initial;
     backdrop-filter: none;
   }
-  button {
-    background-color: darken($main-accent-color, 7%);
-    &:hover {
-      background-color: darken($main-accent-color, 10%);
-    }
-  }
 }
 .header__right--hidden {
   @extend .header__right;
@@ -118,4 +112,37 @@ header.header {
   @include for-tablet-portrait-up {
     display: none;
   }
+}
+
+.header__mobile-nav {
+  display: flex;
+  @include for-tablet-portrait-up {
+    display: none;
+    pointer-events: none;
+  }
+  svg {
+    margin-left: $m-size;
+  }
+}
+.header__cta {
+  button {
+    background-color: darken($main-accent-color, 7%);
+    &:hover {
+      background-color: darken($main-accent-color, 10%);
+    }
+  }
+}
+
+.header__cta--desktop {
+  @extend .header__cta;
+  display: none;
+  pointer-events: none;
+  @include for-tablet-portrait-up {
+    display: initial;
+    pointer-events: initial;
+  }
+}
+
+.header__cta--mobile {
+  @extend .header__cta;
 }
