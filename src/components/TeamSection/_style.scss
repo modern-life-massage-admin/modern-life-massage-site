@@ -19,16 +19,16 @@
   display: grid;
   grid-template-columns: 1fr;
   @include for-tablet-landscape-up {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   @include for-desktop-up {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   column-gap: $l-size;
 }
 .team-section__card {
   @extend .card-background;
-  padding: 2rem 3.6rem $xl-size;
+  padding: $l-size 3.6rem $xl-size;
   margin-bottom: $l-size;
   h4,
   h5 {
@@ -49,13 +49,18 @@
     line-height: $leading-relaxed;
   }
   img {
-    border-radius: 704px;
-    max-width: calc(100vw - (#{$xl-size} * 2));
+    border-radius: 100vw;
+    object-fit: cover;
+    $wrappers-padding: ((3.6rem * 2) + (4.8rem));
+    width: calc(100vw - #{$wrappers-padding});
+    height: calc(100vw - #{$wrappers-padding});
     @include for-tablet-landscape-up {
-      max-width: calc(50vw - (#{$xl-size} * 2));
+      width: calc(50vw - #{$wrappers-padding});
+      height: calc(50vw - #{$wrappers-padding});
     }
     @include for-desktop-up {
-      max-width: calc(33vw - (#{$xl-size} * 2));
+      width: calc(33vw - #{$wrappers-padding});
+      height: calc(33vw - #{$wrappers-padding});
     }
   }
 }
