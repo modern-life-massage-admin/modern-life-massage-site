@@ -8,15 +8,18 @@ const ServicesSection = () => {
     <section className="services-section">
       <h2>Our Services</h2>
       <div className="services-section__cards">
-        {services.map(({ title, description, image }) => (
-          <div className="services-section__card">
-            <img src={image} alt="service cover image" />
-            <div className="services-section__card-content">
-              <h4>{title}</h4>
-              <p>{description}</p>
+        {services.map(({ title, description, image }) => {
+          description = description.replace(/(?:\r\n|\r|\n)/g, "<br>");
+          return (
+            <div className="services-section__card">
+              <img src={image} alt="service cover image" />
+              <div className="services-section__card-content">
+                <h4>{title}</h4>
+                <p dangerouslySetInnerHTML={{ __html: description }} />
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <svg
         width="229"

@@ -11,8 +11,7 @@ const AddOnSection = () => (
         We don't expect you to know when hot stones might enhance the treatment,
         or when cupping may be appropriate to add to a session. Those are things
         that our therapists have been trained to understand. And they will help
-        you, without any hidden up-charges or fees. # of addons:{" "}
-        {HomePageData.add_ons.length}
+        you, without any hidden up-charges or fees.
       </p>
     </div>
     <ul>

@@ -22,11 +22,12 @@ const AboutPage = () => (
     render={(data) => {
       const heroImage = getImage(data.heroImage);
       const { aboutCopy, licenseLinkAddress, licenseLinkText } = AboutPageData;
+      const formatedAboutCopy = aboutCopy.replace(/(?:\r\n|\r|\n)/g, "<br>");
       return (
         <section className="about-section">
           <div className="about-section__content">
             <h2>About Us</h2>
-            <p>{aboutCopy}</p>
+            <p dangerouslySetInnerHTML={{ __html: formatedAboutCopy }} />
 
             <div className="about-section__link">
               <a href={licenseLinkAddress}>{licenseLinkText}</a>
