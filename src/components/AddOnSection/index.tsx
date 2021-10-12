@@ -11,12 +11,13 @@ const AddOnSection = () => (
         We don't expect you to know when hot stones might enhance the treatment,
         or when cupping may be appropriate to add to a session. Those are things
         that our therapists have been trained to understand. And they will help
-        you, without any hidden up-charges or fees.
+        you, without any hidden up-charges or fees. # of addons:{" "}
+        {HomePageData.add_ons.length}
       </p>
     </div>
     <ul>
       {HomePageData.add_ons.map(({ description, title }, index) => {
-        if (index > 2) return;
+        if (index % 2) return;
         return (
           <li>
             <svg
@@ -35,7 +36,7 @@ const AddOnSection = () => (
     </ul>
     <ul>
       {HomePageData.add_ons.map(({ description, title }, index) => {
-        if (index < 3 || index > 5) return;
+        if (!(index % 2)) return;
         return (
           <li>
             <svg
