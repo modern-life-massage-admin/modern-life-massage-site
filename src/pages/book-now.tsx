@@ -12,10 +12,10 @@ const AboutPage = () => (
       slug="/book-now"
     />
     <PromoCodeSection />
-    <iframe
-      src="https://www.massagebook.com/biz/ModernLifeMassageTherapy#services"
-      frameborder="0"
-      width="100%"
+    <iframe 
+      src="https://www.massagebook.com/therapists/ModernLifeMassageTherapy/widget/services" 
+      frameborder="0" 
+      width="100%" 
       height="1000"
     ></iframe>
   </PageLayout>
