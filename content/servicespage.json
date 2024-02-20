@@ -6,23 +6,19 @@
     },
     {
       "label": "30 Minutes",
-      "price": "45"
+      "price": "55"
     },
     {
       "label": "60 Minutes",
-      "price": "80"
+      "price": "100"
     },
     {
       "label": "90 Minutes",
-      "price": "120"
+      "price": "150"
     },
     {
       "label": "120 Minutes",
-      "price": "160"
-    },
-    {
-      "label": "Monthly Package *",
-      "price": "256"
+      "price": "200"
     }
   ],
   "services": [
@@ -68,9 +64,6 @@
     }
   ],
   "pricingNotes": [
-    {
-      "description": "* Monthly package includes four 60 minute massages per month"
-    },
     {
       "description": "15 minute sessions are only offered for Chair Massages, unless prior arrangements are made"
     }
